@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     igl::opengl::glfw::Viewer viewer;
     std::string  path = GetCurrentWorkingDir();
     path = path.replace(path.find("cmake-build-debug/tutorial"), strlen("cmake-build-debug/tutorial") , "tutorial/data/");
-    std::cout << path<< std::endl;
+    //std::cout << path<< std::endl;
     viewer.load_mesh_from_file(path+ "sphere.obj");
     viewer.load_mesh_from_file(path +  "cube.obj");
     viewer.load_mesh_from_file(path + "bunny.off");
